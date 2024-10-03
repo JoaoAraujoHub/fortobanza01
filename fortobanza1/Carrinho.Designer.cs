@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Carrinho));
             this.LogoBox2 = new System.Windows.Forms.PictureBox();
-            this.LogoBox1 = new System.Windows.Forms.PictureBox();
+            this.Logo1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.LogoBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,16 +48,15 @@
             this.LogoBox2.Size = new System.Drawing.Size(45, 50);
             this.LogoBox2.TabIndex = 0;
             this.LogoBox2.TabStop = false;
-            this.LogoBox2.Click += new System.EventHandler(this.LogoBox2_Click);
             // 
-            // LogoBox1
+            // Logo1
             // 
-            this.LogoBox1.Image = ((System.Drawing.Image)(resources.GetObject("LogoBox1.Image")));
-            this.LogoBox1.Location = new System.Drawing.Point(369, 132);
-            this.LogoBox1.Name = "LogoBox1";
-            this.LogoBox1.Size = new System.Drawing.Size(66, 71);
-            this.LogoBox1.TabIndex = 1;
-            this.LogoBox1.TabStop = false;
+            this.Logo1.Image = ((System.Drawing.Image)(resources.GetObject("Logo1.Image")));
+            this.Logo1.Location = new System.Drawing.Point(369, 132);
+            this.Logo1.Name = "Logo1";
+            this.Logo1.Size = new System.Drawing.Size(66, 71);
+            this.Logo1.TabIndex = 1;
+            this.Logo1.TabStop = false;
             // 
             // pictureBox3
             // 
@@ -88,7 +87,6 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Buscar novos produtos";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Carrinho
             // 
@@ -98,14 +96,14 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.LogoBox1);
+            this.Controls.Add(this.Logo1);
             this.Controls.Add(this.LogoBox2);
             this.Controls.Add(this.pictureBox3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Carrinho";
             this.Text = "Souce";
             ((System.ComponentModel.ISupportInitialize)(this.LogoBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.LogoBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -115,7 +113,7 @@
         #endregion
 
         private System.Windows.Forms.PictureBox LogoBox2;
-        private System.Windows.Forms.PictureBox LogoBox1;
+        private System.Windows.Forms.PictureBox Logo1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;

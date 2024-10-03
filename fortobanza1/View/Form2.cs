@@ -12,21 +12,6 @@ namespace fortobanza1
 {
     public partial class Form2 : Form
     {
-        public Form2()
-        {
-            InitializeComponent();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Product1 product1 = new Product1();
-            product1.ShowDialog();
-        }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-            Carrinho carrinho = new Carrinho();
-            carrinho.ShowDialog();
-        }
+        
     }
 }

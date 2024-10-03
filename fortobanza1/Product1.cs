@@ -12,14 +12,6 @@ namespace fortobanza1
 {
     public partial class Product1 : Form
     {
-        public Product1()
-        {
-            InitializeComponent();
-        }
 
-        private void button9_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
     }
 }

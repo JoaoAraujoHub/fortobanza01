@@ -1,6 +1,6 @@
 ﻿namespace fortobanza1
 {
-    partial class Form1
+    partial class Plano
     {
         /// <summary>
         /// Variável de designer necessária.
@@ -28,53 +28,52 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btmAvançar = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Plano));
+            this.espaço1 = new System.Windows.Forms.Label();
+            this.Espaço = new System.Windows.Forms.Panel();
+            this.adivButton = new System.Windows.Forms.Button();
             this.txbPass = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txbUser = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.Espaço.SuspendLayout();
             this.SuspendLayout();
             // 
-            // label1
+            // espaço1
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.label1.Font = new System.Drawing.Font("Swis721 BlkEx BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(241, 65);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(385, 29);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Crie sua conta souce!";
+            this.espaço1.AutoSize = true;
+            this.espaço1.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.espaço1.Font = new System.Drawing.Font("Swis721 BlkEx BT", 18F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.espaço1.ForeColor = System.Drawing.Color.Black;
+            this.espaço1.Location = new System.Drawing.Point(241, 65);
+            this.espaço1.Name = "espaço1";
+            this.espaço1.Size = new System.Drawing.Size(385, 29);
+            this.espaço1.TabIndex = 0;
+            this.espaço1.Text = "Crie sua conta souce!";
             // 
-            // panel1
+            // Espaço
             // 
-            this.panel1.BackColor = System.Drawing.Color.LightGoldenrodYellow;
-            this.panel1.Controls.Add(this.btmAvançar);
-            this.panel1.Controls.Add(this.txbPass);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.txbUser);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Location = new System.Drawing.Point(262, 130);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(339, 273);
-            this.panel1.TabIndex = 1;
+            this.Espaço.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.Espaço.Controls.Add(this.adivButton);
+            this.Espaço.Controls.Add(this.txbPass);
+            this.Espaço.Controls.Add(this.label3);
+            this.Espaço.Controls.Add(this.txbUser);
+            this.Espaço.Controls.Add(this.label2);
+            this.Espaço.Location = new System.Drawing.Point(262, 130);
+            this.Espaço.Name = "Espaço";
+            this.Espaço.Size = new System.Drawing.Size(339, 268);
+            this.Espaço.TabIndex = 1;
             // 
-            // btmAvançar
+            // adivButton
             // 
-            this.btmAvançar.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btmAvançar.Location = new System.Drawing.Point(232, 221);
-            this.btmAvançar.Name = "btmAvançar";
-            this.btmAvançar.Size = new System.Drawing.Size(81, 39);
-            this.btmAvançar.TabIndex = 4;
-            this.btmAvançar.Text = "Avançar";
-            this.btmAvançar.UseVisualStyleBackColor = true;
-            this.btmAvançar.Click += new System.EventHandler(this.btmAvançar_Click);
-            this.btmAvançar.MouseClick += new System.Windows.Forms.MouseEventHandler(this.button1_MouseClick);
+            this.adivButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.adivButton.Location = new System.Drawing.Point(239, 212);
+            this.adivButton.Name = "adivButton";
+            this.adivButton.Size = new System.Drawing.Size(81, 39);
+            this.adivButton.TabIndex = 4;
+            this.adivButton.Text = "Avançar";
+            this.adivButton.UseVisualStyleBackColor = true;
+            this.adivButton.Click += new System.EventHandler(this.adivButton_Click);
             // 
             // txbPass
             // 
@@ -98,11 +97,10 @@
             // txbUser
             // 
             this.txbUser.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbUser.Location = new System.Drawing.Point(22, 61);
+            this.txbUser.Location = new System.Drawing.Point(22, 76);
             this.txbUser.Name = "txbUser";
             this.txbUser.Size = new System.Drawing.Size(274, 24);
             this.txbUser.TabIndex = 1;
-            this.txbUser.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // label2
             // 
@@ -115,21 +113,21 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "E-mail";
             // 
-            // Form1
+            // Plano
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.Espaço);
+            this.Controls.Add(this.espaço1);
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Form1";
+            this.Name = "Plano";
             this.Text = "Souce";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.Espaço.ResumeLayout(false);
+            this.Espaço.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -137,11 +135,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label espaço1;
+        private System.Windows.Forms.Panel Espaço;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txbUser;
-        private System.Windows.Forms.Button btmAvançar;
+        private System.Windows.Forms.Button adivButton;
         private System.Windows.Forms.TextBox txbPass;
         private System.Windows.Forms.Label label3;
     }
