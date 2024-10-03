@@ -46,8 +46,20 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Carrinho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Carrinho.Designer.cs">
+      <DependentUpon>Carrinho.cs</DependentUpon>
+    </Compile>
     <Compile Include="Controller\Connection.cs" />
     <Compile Include="Model\ModaNaSouce.cs" />
+    <Compile Include="Product1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Product1.Designer.cs">
+      <DependentUpon>Product1.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +74,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Carrinho.resx">
+      <DependentUpon>Carrinho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Product1.resx">
+      <DependentUpon>Product1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

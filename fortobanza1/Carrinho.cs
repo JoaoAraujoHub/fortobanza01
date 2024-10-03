@@ -10,23 +10,21 @@ using System.Windows.Forms;
 
 namespace fortobanza1
 {
-    public partial class Form2 : Form
+    public partial class Carrinho : Form
     {
-        public Form2()
+        public Carrinho()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Product1 product1 = new Product1();
-            product1.ShowDialog();
+            this.Close();
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void LogoBox2_Click(object sender, EventArgs e)
         {
-            Carrinho carrinho = new Carrinho();
-            carrinho.ShowDialog();
+            this.Close();
         }
     }
 }
