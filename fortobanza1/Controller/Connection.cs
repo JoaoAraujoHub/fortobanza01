@@ -12,7 +12,7 @@ namespace fortobanza1.Controller
     internal class Connection
     {
         private SqlConnection con;
-        private string DataBase = "PR2CJ3022498SOUCE";
+        private string DataBase = "PR2CJ3022498BREEZY";
         private string Server = "sqlexpress";
         private string Username = "aluno";
         private string Password = "aluno";
@@ -37,5 +37,10 @@ namespace fortobanza1.Controller
         }
         public SqlConnection ReturnConnection ()
         { return con; }
+
+        internal void CloseConnection()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

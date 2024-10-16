@@ -1,4 +1,5 @@
-﻿using System;
+﻿using fortobanza1.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,6 +14,9 @@ namespace fortobanza1
 {
     public partial class Plano : Form
     {
+        private object cmbsenha;
+        private object txbemail;
+
         public Plano()
         {
             InitializeComponent();
@@ -47,7 +51,17 @@ namespace fortobanza1
 
         private void Plano_Load(object sender, EventArgs e)
         {
+            string senha = txbPass.Text;
+            string email = txbUser.Text;
 
+            //Criar objeto do tipo de entidade manipulada.
+            Property property = new Property(senha, email);
+
+            //Criar objeto para interação com o banco de daddos.
+            propertyDAO propertyDAO = new propertyDAO();
+
+            //Chama o insert
+            propertyDAO.Insert(property);   
         }
     }   
 }
