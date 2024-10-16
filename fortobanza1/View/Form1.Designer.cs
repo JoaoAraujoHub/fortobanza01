@@ -101,6 +101,7 @@
             this.txbUser.Name = "txbUser";
             this.txbUser.Size = new System.Drawing.Size(274, 24);
             this.txbUser.TabIndex = 1;
+            this.txbUser.TextChanged += new System.EventHandler(this.txbUser_TextChanged);
             // 
             // label2
             // 
@@ -125,7 +126,8 @@
             this.DoubleBuffered = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Plano";
-            this.Text = "Souce";
+            this.Text = " ";
+            this.Load += new System.EventHandler(this.Plano_Load);
             this.Espaço.ResumeLayout(false);
             this.Espaço.PerformLayout();
             this.ResumeLayout(false);

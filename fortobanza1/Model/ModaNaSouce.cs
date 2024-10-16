@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace fortobanza1.Model
 {
-    internal class property
+    internal class fortobanza1
     {
         public string Email { get; set; }
         public string Senha { get; set; }
 
-        public property (string email, string senha)
+        public fortobanza1 (string email, string senha)
         {
             Senha = senha;
             Email = email;

@@ -12,6 +12,9 @@ namespace fortobanza1
 {
     public partial class Product1 : Form
     {
-
+        public Product1()
+        {
+            InitializeComponent();
+        }
     }
 }
