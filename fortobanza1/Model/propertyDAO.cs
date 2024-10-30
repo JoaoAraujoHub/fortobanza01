@@ -20,8 +20,6 @@ namespace fortobanza1.Model
 
         private Connection Connect { get; set; }
         private SqlCommand Command { get; set; }
-        public object Cmd { get; private set; }
-        public object Con { get; private set; }
 
         //Sempre o nome da classe
         public propertyDAO()
@@ -55,7 +53,7 @@ namespace fortobanza1.Model
             }
         }
 
-        public void Update(Property prop)
+        public void Update(Usuario prop)
         {
             Command.Connection = Connect.ReturnConnection();
             Command.CommandText = @"UPDATE Property SET 
@@ -65,7 +63,7 @@ namespace fortobanza1.Model
             WHERE Id = @Id";
             try
             {
-                Cmd.ExecuteNonQuery();
+                Command.ExecuteNonQuery();
             }
             catch (Exception err)
             {
@@ -73,18 +71,18 @@ namespace fortobanza1.Model
             }
             finally
             {
-                Con.CloseConnection();
+                Connect.CloseConnection();
             }
         }
 
         public void Excluir(int idUsuario)
         {
-            Cmd.Connection = Con.ReturnConnection();
-            Cmd.CommandText = @"DELETE FROM Usuarios WHERE Id = @id";
-            Cmd.Parameters.AddWithValue("@id", idUsuario);
+            Command.Connection = Connect.ReturnConnection();
+            Command.CommandText = @"DELETE FROM Usuarios WHERE Id = @id";
+            Command.Parameters.AddWithValue("@id", idUsuario);
             try
             {
-                Cmd.ExecuteNonQuery();
+                Command.ExecuteNonQuery();
             }
             catch (Exception err)
             {
@@ -92,39 +90,40 @@ namespace fortobanza1.Model
             }
             finally
             {
-                Con.CloseConnection();
+                Connect.CloseConnection();
             }
         }
         public List<Usuario> ListarTodosUsuarios()
         {
 
-            Cmd.Connection = Con.ReturnConnection();
-            Cmd.CommandText = "SELECT * FROM Usuarios";
+            Command.Connection = Connect.ReturnConnection();
+            Command.CommandText = "SELECT * FROM Usuarios";
 
             List<Usuario> listaDeUsuarios = new List<Usuario>(); //Instancio a list com o tamanho padrão.
             try
             {
-                SqlDataReader rd = Cmd.ExecuteReader();
+                SqlDataReader rd = Command.ExecuteReader();
 
                 //Enquanto for possível continuar a leitura das linhas que foram retornadas na consulta, execute.
                 while (rd.Read())
                 {
                     Usuario usuario = new Usuario((int)rd["Id"],
-                        (string)rd["Nome"], (string)rd["Email"], (string)rd["Cpf"],
-                        (string)rd["Telefone"], (string)rd["Usuario"],
+                        (string)rd["Senha"], (string)rd["Email"],
                         "000");
                     listaDeUsuarios.Add(usuario);
                 }
-      
+
+
             catch (Exception err)
             {
                 throw new Exception("Erro: Problemas ao realizar leitura de usuários no banco.\n" + err.Message);
             }
             finally
             {
-                Con.CloseConnection();
+                Connect.CloseConnection();
             }
 
             return listaDeUsuarios;
         }
     }
+}

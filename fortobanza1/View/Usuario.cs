@@ -1,14 +1,16 @@
 ﻿namespace fortobanza1
 {
-    internal class Property
+    internal class Usuario
     {
         private string senha;
         private string email;
+        private string Id;
 
-        public Property(string senha, string email)
+        public Usuario(string senha, string email, string id)
         {
             this.senha = senha;
             this.email = email;
+            Id = id;
         }
     }
 }

@@ -55,7 +55,7 @@ namespace fortobanza1
             string email = txbUser.Text;
 
             //Criar objeto do tipo de entidade manipulada.
-            Property property = new Property(senha, email);
+            Usuario property = new Usuario(senha, email);
 
             //Criar objeto para interação com o banco de daddos.
             propertyDAO propertyDAO = new propertyDAO();
