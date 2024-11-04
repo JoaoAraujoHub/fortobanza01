@@ -15,6 +15,7 @@ namespace fortobanza1.Model
 {
     internal class propertyDAO
     {
+        private object id;
         private object senha;
         private Object email;
 
@@ -107,13 +108,13 @@ namespace fortobanza1.Model
                 //Enquanto for possível continuar a leitura das linhas que foram retornadas na consulta, execute.
                 while (rd.Read())
                 {
-                    Usuario usuario = new Usuario((int)rd["Id"],
+                    Usuario id = new Usuario((string)rd["id"],
                         (string)rd["Senha"], (string)rd["Email"],
                         "000");
-                    listaDeUsuarios.Add(usuario);
+                    listaDeUsuarios.Add(id);
                 }
 
-
+            }
             catch (Exception err)
             {
                 throw new Exception("Erro: Problemas ao realizar leitura de usuários no banco.\n" + err.Message);

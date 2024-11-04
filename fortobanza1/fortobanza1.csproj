@@ -61,6 +61,7 @@
     <Compile Include="Product1.Designer.cs">
       <DependentUpon>Product1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Property.cs" />
     <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
