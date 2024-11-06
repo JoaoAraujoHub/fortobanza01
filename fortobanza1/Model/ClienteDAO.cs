@@ -13,29 +13,27 @@ using System.Threading.Tasks;
 
 namespace fortobanza1.Model
 {
-    internal class propertyDAO
+    internal class ClienteDAO
     {
-        private object id;
-        private object senha;
-        private Object email;
+      
 
         private Connection Connect { get; set; }
         private SqlCommand Command { get; set; }
 
         //Sempre o nome da classe
-        public propertyDAO()
+        public ClienteDAO()
         {
             Connect = new Connection();
             Command = new SqlCommand();
         }
-        public void Insert(propertyDAO prop)
+        public void Insert(Cliente cli)
         {
             Command.Connection = Connect.ReturnConnection();
-            Command.CommandText = @"INSERT INTO Property VALUES 
-            (@senha, @email)";
+            Command.CommandText = @"INSERT INTO TabelaClientes VALUES 
+            (@email, @senha)";
 
-            Command.Parameters.AddWithValue("@nome", prop.senha);
-            Command.Parameters.AddWithValue("@email", prop.email);
+            Command.Parameters.AddWithValue("@senha", cli.Senha);
+            Command.Parameters.AddWithValue("@email", cli.Email);
 
 
             try
@@ -54,7 +52,7 @@ namespace fortobanza1.Model
             }
         }
 
-        public void Update(Usuario prop)
+        public void Update(Cliente prop)
         {
             Command.Connection = Connect.ReturnConnection();
             Command.CommandText = @"UPDATE Property SET 
@@ -76,11 +74,11 @@ namespace fortobanza1.Model
             }
         }
 
-        public void Excluir(int idUsuario)
+        public void Excluir(int idCliente)
         {
             Command.Connection = Connect.ReturnConnection();
-            Command.CommandText = @"DELETE FROM Usuarios WHERE Id = @id";
-            Command.Parameters.AddWithValue("@id", idUsuario);
+            Command.CommandText = @"DELETE FROM TabelaClientes WHERE Id = @id";
+            Command.Parameters.AddWithValue("@id", idCliente);
             try
             {
                 Command.ExecuteNonQuery();
@@ -94,13 +92,13 @@ namespace fortobanza1.Model
                 Connect.CloseConnection();
             }
         }
-        public List<Usuario> ListarTodosUsuarios()
+        public List<Cliente> ListarTodosUsuarios()
         {
 
             Command.Connection = Connect.ReturnConnection();
-            Command.CommandText = "SELECT * FROM Usuarios";
+            Command.CommandText = "SELECT * FROM Cliente";
 
-            List<Usuario> listaDeUsuarios = new List<Usuario>(); //Instancio a list com o tamanho padrão.
+            List<Cliente> listaCliente = new List<Cliente>(); //Instancio a list com o tamanho padrão.
             try
             {
                 SqlDataReader rd = Command.ExecuteReader();
@@ -108,10 +106,9 @@ namespace fortobanza1.Model
                 //Enquanto for possível continuar a leitura das linhas que foram retornadas na consulta, execute.
                 while (rd.Read())
                 {
-                    Usuario id = new Usuario((string)rd["id"],
-                        (string)rd["Senha"], (string)rd["Email"],
-                        "000");
-                    listaDeUsuarios.Add(id);
+                    Cliente cli = new Cliente(
+                        (string)rd["Email"], (string)rd["Senha"], (int)rd["CodCLiente"]);
+                    listaCliente.Add(cli);
                 }
 
             }
@@ -124,7 +121,9 @@ namespace fortobanza1.Model
                 Connect.CloseConnection();
             }
 
-            return listaDeUsuarios;
+            return listaCliente;
         }
+
+       
     }
 }

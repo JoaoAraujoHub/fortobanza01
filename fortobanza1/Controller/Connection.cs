@@ -40,7 +40,7 @@ namespace fortobanza1.Controller
 
         internal void CloseConnection()
         {
-            throw new NotImplementedException();
+            if(con.State == ConnectionState.Open) con.Close();
         }
     }
 }

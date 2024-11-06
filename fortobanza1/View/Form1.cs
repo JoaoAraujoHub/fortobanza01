@@ -55,13 +55,13 @@ namespace fortobanza1
             string email = txbUser.Text;
 
             //Criar objeto do tipo de entidade manipulada.
-            Usuario property = new Usuario(senha, email);
+            Cliente cliNovo = new Cliente(senha, email);
 
             //Criar objeto para interação com o banco de daddos.
-            propertyDAO propertyDAO = new propertyDAO();
+            ClienteDAO propertyDAO = new ClienteDAO();
 
             //Chama o insert
-            propertyDAO.Insert(property);   
+            propertyDAO.Insert(cliNovo);   
         }
     }   
 }
