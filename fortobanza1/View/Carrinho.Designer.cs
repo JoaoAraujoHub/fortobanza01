@@ -102,6 +102,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Carrinho";
             this.Text = "Souce";
+            this.Load += new System.EventHandler(this.Carrinho_Load);
             ((System.ComponentModel.ISupportInitialize)(this.LogoBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

@@ -10,8 +10,11 @@ using System.Windows.Forms;
 
 namespace fortobanza1
 {
-    public partial class Carrinho : Form
+    public partial class Form3 : Form
     {
-
+        public Form3()
+        {
+            InitializeComponent();
+        }
     }
 }

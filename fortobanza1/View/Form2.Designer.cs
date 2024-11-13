@@ -69,6 +69,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(791, 93);
             this.panel1.TabIndex = 1;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label3
             // 
@@ -174,9 +175,9 @@
             this.label7.Font = new System.Drawing.Font("Swis721 BlkCn BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(328, 282);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(143, 14);
+            this.label7.Size = new System.Drawing.Size(136, 14);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Graphic Tee \"Dennis Rodman\"";
+            this.label7.Text = "Graphic Tee \"Chicago Bulls\"";
             // 
             // button4
             // 
@@ -186,6 +187,7 @@
             this.button4.Size = new System.Drawing.Size(204, 226);
             this.button4.TabIndex = 8;
             this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label8
             // 
@@ -217,6 +219,7 @@
             this.button2.Size = new System.Drawing.Size(204, 226);
             this.button2.TabIndex = 12;
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // pictureBox5
             // 
@@ -227,6 +230,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 13;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // pictureBox4
             // 
@@ -237,6 +241,7 @@
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox4.TabIndex = 9;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox3
             // 
@@ -247,6 +252,7 @@
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 5;
             this.pictureBox3.TabStop = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
             // 
             // Form2
             // 
@@ -270,6 +276,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form2";
             this.Text = "Souce";
+            this.Load += new System.EventHandler(this.Form2_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -286,7 +293,6 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
@@ -302,5 +308,6 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

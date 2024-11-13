@@ -29,7 +29,7 @@ namespace fortobanza1
                 txbUser.Text = string.Empty; //Limpa o campo de usuario 
                 txbPass.Text = string.Empty; //Limpa o campo de senha
                 txbUser.Focus(); //Coloca o foco no campo de usuario
-                Product1 form2 = new Product1();
+                Form2 form2 = new Form2();
                 this.Visible = false; //Esconder tela de login
                 form2.ShowDialog(); //Abre a tela principal
                 this.Visible = true;  //Voltar a mostrar a tela de login

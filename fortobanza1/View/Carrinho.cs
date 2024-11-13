@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace fortobanza1
 {
-    public partial class Product1 : Form
+    public partial class Carrinho : Form
     {
-        public Product1()
+        private void Carrinho_Load(object sender, EventArgs e)
         {
-            InitializeComponent();
+
         }
     }
 }

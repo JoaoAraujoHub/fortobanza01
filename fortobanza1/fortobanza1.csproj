@@ -46,21 +46,33 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Carrinho.cs">
+    <Compile Include="View\Product3.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Carrinho.Designer.cs">
+    <Compile Include="View\Product3.Designer.cs">
+      <DependentUpon>Product3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Carrinho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Carrinho.Designer.cs">
       <DependentUpon>Carrinho.cs</DependentUpon>
     </Compile>
     <Compile Include="Controller\Connection.cs" />
-    <Compile Include="Model\ModaNaSouce.cs" />
-    <Compile Include="Model\ClienteDAO.cs" />
-    <Compile Include="Product1.cs">
+    <Compile Include="View\Product2.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Product1.Designer.cs">
-      <DependentUpon>Product1.cs</DependentUpon>
+    <Compile Include="View\Product2.Designer.cs">
+      <DependentUpon>Product2.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\ModaNaSouce.cs" />
+    <Compile Include="Model\ClienteDAO.cs" />
     <Compile Include="Model\Cliente.cs" />
     <Compile Include="View\Form1.cs">
       <SubType>Form</SubType>
@@ -76,11 +88,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Carrinho.resx">
+    <Compile Include="View\Product1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\Product1.Designer.cs">
+      <DependentUpon>Product1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="View\Carrinho.resx">
       <DependentUpon>Carrinho.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Product1.resx">
-      <DependentUpon>Product1.cs</DependentUpon>
+    <EmbeddedResource Include="View\Product2.resx">
+      <DependentUpon>Product2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -98,6 +116,15 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="View\Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Product1.resx">
+      <DependentUpon>Product1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Product3.resx">
+      <DependentUpon>Product3.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

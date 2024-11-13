@@ -67,6 +67,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(795, 93);
             this.panel1.TabIndex = 2;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label3
             // 
@@ -97,6 +98,7 @@
             this.label1.Size = new System.Drawing.Size(56, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Inicio";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // pictureBox2
             // 
@@ -242,6 +244,7 @@
             this.button9.TabIndex = 16;
             this.button9.Text = "Adicionar ao carrinho";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Product1
             // 
@@ -265,6 +268,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Product1";
             this.Text = "Souce";
+            this.Load += new System.EventHandler(this.Product1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
