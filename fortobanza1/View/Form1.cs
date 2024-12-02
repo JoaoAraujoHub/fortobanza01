@@ -42,6 +42,10 @@ namespace fortobanza1
                     MessageBoxIcon.Error);
 
             }
+            if (txbUser.Text == "admin" && txbPass.Text == "admin")
+            {
+
+            }
         }
 
         private void txbUser_TextChanged(object sender, EventArgs e)
