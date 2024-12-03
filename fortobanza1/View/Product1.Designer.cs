@@ -48,6 +48,7 @@
             this.button8 = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
+            this.btnl = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -108,6 +109,7 @@
             this.pictureBox2.Size = new System.Drawing.Size(65, 65);
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
             // 
             // pictureBox1
             // 
@@ -246,12 +248,26 @@
             this.button9.UseVisualStyleBackColor = false;
             this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
+            // btnl
+            // 
+            this.btnl.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.btnl.Font = new System.Drawing.Font("Swis721 BlkEx BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnl.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnl.Location = new System.Drawing.Point(463, 386);
+            this.btnl.Name = "btnl";
+            this.btnl.Size = new System.Drawing.Size(147, 49);
+            this.btnl.TabIndex = 17;
+            this.btnl.Text = "Adimin";
+            this.btnl.UseVisualStyleBackColor = false;
+            this.btnl.Click += new System.EventHandler(this.btnl_Click);
+            // 
             // Product1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(790, 447);
+            this.Controls.Add(this.btnl);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.button8);
@@ -300,5 +316,6 @@
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnl;
     }
 }

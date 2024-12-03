@@ -28,7 +28,7 @@ namespace fortobanza1
 
             Command.Parameters.AddWithValue("@brokerName", broker.BrokerName);
             Command.Parameters.AddWithValue("@brokerCode", broker.BrokerCode);
-            Command.Parameters.AddWithValue("@brokerPreco", broker.BrokerPreco);
+            Command.Parameters.AddWithValue("@brokerPreco", broker.brokerPreco);
             Command.Parameters.AddWithValue("@brokerQuantidade", broker.BrokerQuantidade);
 
             try
@@ -60,7 +60,7 @@ BrokerQuantidade = @brokerQuantidade";
 
             Command.Parameters.AddWithValue("@brokerName", broker.BrokerName);
             Command.Parameters.AddWithValue("@brokerCode", broker.BrokerCode);
-            Command.Parameters.AddWithValue("@brokerPreco", broker.BrokerPreco);
+            Command.Parameters.AddWithValue("@brokerPreco", broker.brokerPreco);
             Command.Parameters.AddWithValue("@brokerQuantidade", broker.BrokerQuantidade);
             try
             {

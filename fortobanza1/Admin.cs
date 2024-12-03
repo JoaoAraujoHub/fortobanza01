@@ -21,5 +21,28 @@ namespace fortobanza1
         {
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Product1 form2 = new Product1();
+            this.Visible = false; //Esconder tela de login
+            form2.ShowDialog(); //Abre a tela principal
+            this.Visible = true;  //Voltar a mostrar a tela de login
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

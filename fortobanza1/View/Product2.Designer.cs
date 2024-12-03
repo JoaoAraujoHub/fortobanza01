@@ -48,6 +48,7 @@ namespace fortobanza1
             this.label2 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
+            this.btnk = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -225,6 +226,20 @@ namespace fortobanza1
             this.button9.TabIndex = 26;
             this.button9.Text = "Adicionar ao carrinho";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // btnk
+            // 
+            this.btnk.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.btnk.Font = new System.Drawing.Font("Swis721 BlkEx BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnk.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnk.Location = new System.Drawing.Point(431, 360);
+            this.btnk.Name = "btnk";
+            this.btnk.Size = new System.Drawing.Size(147, 49);
+            this.btnk.TabIndex = 27;
+            this.btnk.Text = "Admin";
+            this.btnk.UseVisualStyleBackColor = false;
+            this.btnk.Click += new System.EventHandler(this.btnk_Click);
             // 
             // Product2
             // 
@@ -232,6 +247,7 @@ namespace fortobanza1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnk);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label2);
@@ -282,5 +298,6 @@ namespace fortobanza1
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnk;
     }
 }

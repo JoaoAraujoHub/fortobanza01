@@ -61,12 +61,6 @@
     <Compile Include="View\Product3.Designer.cs">
       <DependentUpon>Product3.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Carrinho.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="View\Carrinho.Designer.cs">
-      <DependentUpon>Carrinho.cs</DependentUpon>
-    </Compile>
     <Compile Include="Controller\Connection.cs" />
     <Compile Include="View\Product2.cs">
       <SubType>Form</SubType>
@@ -105,9 +99,6 @@
     </Compile>
     <EmbeddedResource Include="Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Carrinho.resx">
-      <DependentUpon>Carrinho.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Product2.resx">
       <DependentUpon>Product2.cs</DependentUpon>

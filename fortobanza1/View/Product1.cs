@@ -28,10 +28,7 @@ namespace fortobanza1
 
         private void button9_Click(object sender, EventArgs e)
         {
-            Carrinho Product1 = new Carrinho();
-            this.Visible = false; //Esconder tela de login
-            Product1.ShowDialog(); //Abre a tela principal
-            this.Visible = true;  //Voltar a mostrar a tela de login
+            MessageBox.Show("O seus produto esta no carrinho");
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -40,6 +37,20 @@ namespace fortobanza1
             this.Visible = false; //Esconder tela de login
             form2.ShowDialog(); //Abre a tela principal
             this.Visible = true;  //Voltar a mostrar a tela de login
+        }
+
+        private void btnl_Click(object sender, EventArgs e)
+        {
+
+            Admin form2 = new Admin();
+            this.Visible = false; //Esconder tela de login
+            form2.ShowDialog(); //Abre a tela principal
+            this.Visible = true;  //Voltar a mostrar a tela de login
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

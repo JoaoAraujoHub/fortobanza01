@@ -45,6 +45,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.button9 = new System.Windows.Forms.Button();
+            this.btnj = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -138,9 +139,10 @@
             this.label7.ForeColor = System.Drawing.Color.LightGoldenrodYellow;
             this.label7.Location = new System.Drawing.Point(381, 166);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(252, 19);
+            this.label7.Size = new System.Drawing.Size(169, 19);
             this.label7.TabIndex = 26;
-            this.label7.Text = "Graphic Tee \"Chicago Bulls\"";
+            this.label7.Text = "Camisa Retrô PSG";
+            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // label1
             // 
@@ -151,7 +153,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(135, 29);
             this.label1.TabIndex = 27;
-            this.label1.Text = "R$189,90";
+            this.label1.Text = "R$249,99";
             // 
             // button8
             // 
@@ -211,6 +213,20 @@
             this.button9.TabIndex = 33;
             this.button9.Text = "Adicionar ao carrinho";
             this.button9.UseVisualStyleBackColor = false;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // btnj
+            // 
+            this.btnj.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.btnj.Font = new System.Drawing.Font("Swis721 BlkEx BT", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnj.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.btnj.Location = new System.Drawing.Point(426, 354);
+            this.btnj.Name = "btnj";
+            this.btnj.Size = new System.Drawing.Size(147, 49);
+            this.btnj.TabIndex = 34;
+            this.btnj.Text = "Admin";
+            this.btnj.UseVisualStyleBackColor = false;
+            this.btnj.Click += new System.EventHandler(this.btnj_Click);
             // 
             // Product3
             // 
@@ -218,6 +234,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnj);
             this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.button7);
@@ -259,5 +276,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnj;
     }
 }
